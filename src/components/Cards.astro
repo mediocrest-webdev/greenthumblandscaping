@@ -1,0 +1,16 @@
+---
+const {img, name, role, message} = Astro.props;
+// import {Image} from 'astro:assets';
+
+// Image imports
+---
+<article class="border shadow-sm p-4 rounded-xl bg-white">
+    <div class="md:flex items-center mb-4">
+        <!-- <Image src={img} alt=''></Image> -->
+        <div>
+            <p class="text-body font-medium">{name}</p>
+            <p class="text-caption text-slate-600">{role}</p>
+        </div>
+    </div>
+    <p class="text-body-sm md:text-body-lg">"{message}"</p>
+</article>

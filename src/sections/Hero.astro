@@ -1,0 +1,56 @@
+---
+import { Picture } from "astro:assets";
+
+// Image imports
+import HeroImg from "../images/hero-img.webp";
+import HeroImgM from "../images/hero-img-m.webp";
+---
+
+<section
+  id="home"
+  class="mb-12 md:mb-16 lg:mb-24"
+>
+  <div class="relative">
+    <Picture
+      src={HeroImg}
+      formats={["avif", "webp"]}
+      alt="A photo of a house with beautiful lawn and trees surrounding it"
+      title="a house with beautiful lawn and trees surrounding it"
+      class="hidden md:block object-cover inset-0 rounded-xl bg-center aspect-video mb-4 w-full brightness-50"
+      loading="eager"
+      fetchpriority="high"
+      width="1400"
+      height="900"
+    />
+    <Picture
+      src={HeroImgM}
+      formats={["avif", "webp"]}
+      alt="A photo of a house with beautiful lawn and trees surrounding it"
+      title="a house with beautiful lawn and trees surrounding it"
+      class="md:hidden object-cover inset-0 rounded-xl bg-center aspect-video mb-4 w-full brightness-50"
+      loading="eager"
+      fetchpriority="high"
+    />
+
+    <!-- h1 and p inside that video -->
+    <hgroup class="absolute bottom-0 p-4 sm:p-8 space-y-4">
+      <h1
+        class="text-heading-md md:text-heading-lg lg:text-heading-xl leading-none font-semibold mix-blend-lighten text-text-950"
+      >
+        Expert Lawn Care, Gardening, and Hardscaping Services
+      </h1>
+      <p class="text-body-sm text-text-900 md:text-body">
+        With over 10 years of experience, we helped countless homeowners
+        create lush lawns, stunning gardens, and functional hardscapes that elevate their outdoor
+        living.
+      </p>
+    </hgroup>
+  </div>
+</section>
+
+<style>
+  img {
+    height: calc(100svh - 100px);
+    width: 100%;
+  }
+</style>

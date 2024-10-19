@@ -1,0 +1,47 @@
+---
+import {Image} from 'astro:assets';
+
+// Image imports
+import Service1 from '../images/lawn-care-service.webp';
+import Service2 from '../images/gardening-service.webp';
+import Service3 from '../images/hardscaping-service.webp';
+---
+<section id="services" class="mb-12 md:mb-16 lg:mb-24">
+    <!-- Header section with service title and description -->
+    <div class="items-center justify-between mb-10 lg:flex space-y-4">
+        <header class="space-y-1">
+            <!-- Service title -->
+            <span class="tracking-widest text-text-300 font-semibold text-caption">SERVICES</span>
+            <!-- Service subtitle -->
+            <h2 class="font-medium leading-none text-heading-sm md:text-heading-md lg:text-heading-lg">Elevating Your Outdoor Space</h2>
+        </header>
+        <!-- Service description -->
+        <p class="text-body-sm md:text-body">
+            GreenThumb Landscaping provides personalized lawn care, gardening, and hardscaping with eco-friendly practices, creating beautiful, sustainable landscapes that enhance your property's value.
+        </p>
+    </div>
+    <!-- Grid of service images -->
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <!-- Service image 1 -->
+        <div class="relative">
+            <Image src={Service1} alt='A man doing lawn care service' width="565" height="565" class='object-cover w-full aspect-square rounded-xl brightness-75'/>
+            <p class="absolute bottom-0 bg-white px-6 py-3 rounded-tr-xl font-medium text-body-sm sm:text-body">
+                Lawn Care Services
+            </p>
+        </div>
+        <!-- Service image 2 -->
+        <div class="relative">
+            <Image src={Service2} alt='A woman gardening' width="565" height="565" class='object-cover w-full aspect-square rounded-xl brightness-75'/>
+            <p class="absolute bottom-0 bg-white px-6 py-3 rounded-tr-xl font-medium text-body-sm sm:text-body">
+               Gardening Services
+            </p>
+        </div>
+        <!-- Service image 3 -->
+        <div class="relative">
+            <Image src={Service3} alt='A man arranging bricks for a walk-path' width="565" height="565" class='object-cover w-full aspect-square rounded-xl brightness-75'/>
+            <p class="absolute bottom-0 bg-white px-6 py-3 rounded-tr-xl font-medium text-body-sm sm:text-body">
+                Hardscaping Services
+            </p>
+        </div>
+    </div>
+</section>

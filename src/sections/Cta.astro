@@ -1,0 +1,29 @@
+---
+import Button from "../components/Button.astro";
+
+import { Image } from "astro:assets";
+
+// Image imports
+import CTA from "../images/cta-img.webp";
+---
+<section id="contact">
+  <div class="flex flex-col overflow-hidden rounded-lg bg-primary-300 sm:flex-row">
+    <!-- content - start -->
+    <div class="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-2/5 text-text-950">
+      <h2 class="mb-4 text-xl font-medium md:text-2xl lg:text-4xl text-text-900">Transform Your Outdoor Space Today</h2>
+      <p class="mb-8 max-w-md text-bg-slate text-body-sm sm:text-body">
+        Ready to transform your landscape? GreenThumb Landscaping delivers personalized designs and expert service for lush gardens, serene patios, and complete outdoor makeovers.
+      </p>
+      <div class="mt-auto mb-4">
+        <Button href="tel:09123456789" style="px-6 py-3 text-caption text-text rounded-full bg-primary-200 hover:bg-secondary hover:transition-color duration-300 ease-in-out hover:shadow-sm ml-auto" label="Get A Free Quote Now"/>
+      </div>
+    </div>
+    <!-- content - end -->
+
+    <!-- image - start -->
+    <div class="order-first sm:order-none sm:w-1/2 lg:w-3/5 h-64 sm:h-auto">
+      <Image src={CTA} alt="a photo of a lush garden" width="1045" height="700" class="h-full w-full object-cover" />
+    </div>
+    <!-- image - end -->
+  </div>
+</section>

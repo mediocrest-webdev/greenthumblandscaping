@@ -1,0 +1,55 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.css";
+---
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Primary Meta Tags -->
+    <title>Greenthumb Landscaping | Professional Landscaping & Lawn Care Services</title>
+    <meta name="description" content="Greenthumb Landscaping provides expert landscaping services, lawn care, and garden maintenance to keep your outdoor spaces beautiful and healthy. Contact us for custom solutions.">
+    <meta name="keywords" content="landscaping services, lawn care services, garden maintenance, landscape design, lawn maintenance, residential landscaping, commercial landscaping, irrigation services">
+    <meta name="author" content="Greenthumb Landscaping">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Greenthumb Landscaping | Professional Landscaping & Lawn Care Services">
+    <meta property="og:description" content="Get top-notch landscaping services, lawn care, and garden maintenance from Greenthumb Landscaping. We create stunning outdoor environments tailored to your needs.">
+    <meta property="og:url" content="https://www.greenthumblandscaping.com">
+    <meta property="og:image" content="https://www.greenthumblandscaping.com/images/greenthumb-landscaping-og.jpg">
+    <meta property="og:site_name" content="Greenthumb Landscaping">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Greenthumb Landscaping | Professional Landscaping & Lawn Care Services">
+    <meta name="twitter:description" content="Transform your outdoor spaces with our landscaping services, including lawn care, garden maintenance, and custom landscape design. Contact Greenthumb Landscaping today!">
+    <meta name="twitter:image" content="https://www.greenthumblandscaping.com/images/greenthumb-landscaping-twitter.jpg">
+    <meta name="twitter:site" content="@greenthumb_landscaping">
+
+    <!-- Additional SEO Meta Tags -->
+    <link rel="canonical" href="https://www.greenthumblandscaping.com">
+    <meta name="robots" content="index, follow">
+    <meta name="rating" content="general">
+
+    <!-- Schema.org for Google+ -->
+    <meta itemprop="name" content="Greenthumb Landscaping | Professional Landscaping & Lawn Care Services">
+    <meta itemprop="description" content="Greenthumb Landscaping offers premier landscaping services and lawn care. Let us design and maintain your outdoor spaces with care and expertise.">
+    <meta itemprop="image" content="https://www.greenthumblandscaping.com/images/greenthumb-landscaping-schema.jpg">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="container px-4 md:px-8 max-w-screen-2xl mx-auto relative antialiased">
+    <Navbar />
+    <slot />
+    <Footer />
+</body>
+</html>

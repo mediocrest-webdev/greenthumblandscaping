@@ -1,0 +1,67 @@
+---
+import Cards from "../components/Cards.astro";
+---
+<section
+  id="testimonials"
+  class="bg-slate-50 rounded-xl p-8 md:p-16 mb-12 md:mb-16 lg:mb-24"
+>
+  <div class="flex flex-col justify-center items-center mb-10 space-y-1">
+    <span class="tracking-widest text-text-300 font-semibold text-caption text-center"
+      >TESTIMONIALS</span
+    >
+    <h2 class="mb-4 font-medium leading-none text-heading-sm md:text-heading-md lg:text-heading-lg text-center text-text-50">What Our Happy Clients Say</h2>
+  </div>
+
+  <article>
+    <!-- Grid -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-3 gap-4"
+    >
+      <div class="p-6 w-full border border-gray-200 rounded-xl bg-white">
+        <!-- Review -->
+        <blockquote class="flex flex-col justify-between">
+          <span class="text-sm text-text-100 mb-4"
+            >GreenThumb Landscaping transformed my backyard into a beautiful oasis. Their attention to detail and eco-friendly approach is impressive.</span
+          >
+          <footer class="mt-auto">
+            <div class="grow">
+              <div class="text-xs text-text-200">~ Josh Smith</div>
+            </div>
+          </footer>
+        </blockquote>
+        <!-- End Review -->
+      </div>
+
+      <div class="p-6 w-full border border-gray-200 rounded-xl bg-white">
+        <!-- Review -->
+        <blockquote class="flex flex-col justify-between">
+          <span class="text-sm text-text-100 mb-4"
+            >The team at GreenThumb exceeded our expectations. Our new garden is stunning, and the entire process was smooth and professional.</span
+          >
+          <footer class="mt-auto">
+            <div class="grow">
+              <div class="text-xs text-text-200">~ Nicole Johnson</div>
+            </div>
+          </footer>
+        </blockquote>
+        <!-- End Review -->
+      </div>
+
+      <div class="p-6 w-full border border-gray-200 rounded-xl bg-white">
+        <!-- Review -->
+        <blockquote class="flex flex-col justify-between">
+          <span class="text-sm text-text-100 mb-4"
+            >From start to finish, GreenThumb Landscaping made our outdoor makeover stress-free. We love our new patio and garden space!</span
+          >
+          <footer class="mt-auto">
+            <div class="grow">
+              <div class="text-xs text-text-200">~ James Lee</div>
+            </div>
+          </footer>
+        </blockquote>
+        <!-- End Review -->
+      </div>
+    </div>
+    <!-- End Grid -->
+  </article>
+</section>

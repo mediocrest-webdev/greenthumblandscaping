@@ -1,0 +1,28 @@
+---
+import GalleryList from "../components/GalleryList.astro";
+import { gallery } from "../data/gallery.json";
+---
+
+<section
+  id="gallery"
+  class="relative p-4 overflow-hidden md:p-8 rounded-xl mb-12 md:mb-16 lg:mb-24"
+>
+  <div class="flex flex-col">
+    <!-- Content -->
+    <div class="flex flex-col mb-8">
+      <span class="tracking-widest text-text-300 font-semibold mb-1 text-caption">GALLERY</span>
+      <h2
+        class="mb-4 font-medium leading-none text-heading-sm md:text-heading-md lg:text-heading-lg text-text-50"
+      >
+      Showcasing Our Landscape Transformations
+      </h2>
+      <p class="text-text-100 text-body-sm md:text-body">
+        Explore our portfolio of beautifully crafted landscapes that showcase the expertise of Greenthumb Landscaping Services.
+      </p>
+    </div>
+    <!-- Image Group -->
+    <div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {gallery.map((gallery) => <GalleryList {...gallery} />)}
+    </div>
+  </div>
+</section>
