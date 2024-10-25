@@ -44,7 +44,6 @@ export default {
           950: 'hsl(115, 46%, 95%)',
         }
        },
-       
       fontSize: {
         caption: ["0.75rem"], // Small text for captions
         "body-sm": ["0.875rem"], // Smaller body text
@@ -56,6 +55,14 @@ export default {
         "heading-xl": ["clamp(2.25rem, 3vw + 1rem, 3rem)"], // Large hero section headings
         headline: ["clamp(3rem, 4vw + 1rem, 4rem)"], // Biggest headlines for marketing
       },
+      fontFamily: {
+				'light': ['Inter Tight-Light', 'sans-serif'],
+				'regular': ['Inter Tight-Regular', 'sans-serif'],
+				'medium': ['Inter Tight-Medium', 'sans-serif'],
+				'semibold': ['Inter Tight-Semibold', 'sans-serif'],
+				'bold': ['Inter Tight-Bold', 'sans-serif'],
+				'black': ['Inter Tight-Black', 'sans-serif'],
+			},
     },
   },
   plugins: [],
