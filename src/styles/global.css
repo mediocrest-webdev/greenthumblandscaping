@@ -74,7 +74,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
     font-family: 'Inter Tight-Semibold', sans-serif;
-    max-width: 20ch;
 }
 
 p, li, figcaption {
